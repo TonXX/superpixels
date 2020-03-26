@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ncut-segment", "ncut-segment\ncut-segment.vcxproj", "{BD4E62F5-B6D0-4DA0-90DB-A75565838162}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD4E62F5-B6D0-4DA0-90DB-A75565838162}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BD4E62F5-B6D0-4DA0-90DB-A75565838162}.Debug|Win32.Build.0 = Debug|Win32
+		{BD4E62F5-B6D0-4DA0-90DB-A75565838162}.Release|Win32.ActiveCfg = Release|Win32
+		{BD4E62F5-B6D0-4DA0-90DB-A75565838162}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
