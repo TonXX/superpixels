@@ -7,6 +7,8 @@
 		
 ######################################################
 
+
+
 超像素分割方法，采用论文 SEEDS: Superpixels Extracted via Energy-Driven Sampling 提出的方法，对于物体的边界具有较好的保留，如下图所示。可以辅助目标检测中制作Banchmark。
 
 本工程在其基础上，获得的图像labels和contours，然后分别实现区域种子填充，Windows下编译环境为： OpenCV CMake Visual Studio 工程demo包括：
@@ -21,6 +23,8 @@ SuperSeedsTest: SEEDS 提供的用例，可获取超像素分割labels和contour
 
 
 ######################################################
+
+
 Installation instructions Make sure you have MATLAB 7.0 or higher and the Image Processing Toolbox. Running the scripts
 
 Unzip the files to some directory mydir
@@ -33,6 +37,8 @@ In matlab, type: cd mydir init compileDir //only need to be run once to compile 
 		 
 		 
 ######################################################
+
+
 Implementation of the segmentation algorithm described in:
 
 Efficient Graph-Based Image Segmentation Pedro F. Felzenszwalb and Daniel P. Huttenlocher International Journal of Computer Vision, 59(2) September 2004.
@@ -58,6 +64,8 @@ Typical parameters are sigma = 0.5, k = 500, min = 20. Larger values for k resul
 
 
 ######################################################
+
+
 Put all the code into a directory (for example 'my_dir')
 
 Run 'cd my_dir'
@@ -84,6 +92,8 @@ img = im2double(imread('lizard.jpg')); [phi,boundary,disp_img] = superpixels(img
 
 Getting superpixels while saving every frame of the evolution into a movie
 img = im2double(imread('lizard.jpg')); [phi,boundary,disp_img, frames] = superpixels(img, 1500, 1); disp('Press any key to view the evolution movie'); pause; movie(frames);
+
+
 
 ######################################################
 
