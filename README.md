@@ -1,6 +1,10 @@
 
 ######################################################
+
+
         #######方法1：superpixels_seeds#####
+		
+		
 ######################################################
 
 超像素分割方法，采用论文 SEEDS: Superpixels Extracted via Energy-Driven Sampling 提出的方法，对于物体的边界具有较好的保留，如下图所示。可以辅助目标检测中制作Banchmark。
@@ -11,7 +15,11 @@ SuperSeedsTest: SEEDS 提供的用例，可获取超像素分割labels和contour
 
 备注：无需配置cmake也行，自己手动添加文件头文件和源文件
 ######################################################
+
+
 #######方法2：ncuts：可以在matlab2012等以上版本运行#####
+
+
 ######################################################
 Installation instructions Make sure you have MATLAB 7.0 or higher and the Image Processing Toolbox. Running the scripts
 
@@ -19,7 +27,11 @@ Unzip the files to some directory mydir
 In matlab, type: cd mydir init compileDir //only need to be run once to compile mex-files script_ncut_multiscale // script for basic multiscale segmentation script_ncut_multiscale_timing // script for computation time Note: if you are using AMD 64 and comileDir brings errors, this might be due to a bug in gcc. The following should fix it: edit the config file for compiling matlab mex files. It is typically located under: /home/username/.matlab/R14SP3/mexopts.sh. Go to the section
 
 ######################################################
+
+
          ############ 方法3：FH ############
+		 
+		 
 ######################################################
 Implementation of the segmentation algorithm described in:
 
@@ -37,8 +49,14 @@ sigma: Used to smooth the input image before segmenting it. k: Value for the thr
 
 Typical parameters are sigma = 0.5, k = 500, min = 20. Larger values for k result in larger components in the result.
 
+
+
 ######################################################
+
+
 ############## 方法4：TurboPixels64  ##############
+
+
 ######################################################
 Put all the code into a directory (for example 'my_dir')
 
@@ -68,5 +86,9 @@ Getting superpixels while saving every frame of the evolution into a movie
 img = im2double(imread('lizard.jpg')); [phi,boundary,disp_img, frames] = superpixels(img, 1500, 1); disp('Press any key to view the evolution movie'); pause; movie(frames);
 
 ######################################################
+
+
     ######### 方法5：SLIC   ######### 
+	
+	
 ######################################################
